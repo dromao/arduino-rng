@@ -7,7 +7,7 @@ void printStatus(){
   threshold = (num_increments + 1) * increment;
   if(calibration_counter > threshold){
     num_increments++;
-    Serial.print("*");
+    Serial.print(F("*"));
     blinkLed();
   }
 }
@@ -18,9 +18,9 @@ void blinkLed(){
   digitalWrite(led_pin, LOW);
 }
 
-void clear_bins(){
+void clear_bins(int ng){
   int i;
   for(i=0; i < BINS_SIZE; i++){
-      bins[i]=0;
+      bins[ng][i]=0;
   }
 }

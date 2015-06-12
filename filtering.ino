@@ -5,7 +5,6 @@ void exclusiveOr(byte input){
 }
 
 void vonNeumann(byte input){
-  static int count = 1;
   static boolean previous = 0;
   static boolean flip_flop = 0;
   
