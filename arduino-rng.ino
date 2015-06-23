@@ -29,9 +29,9 @@ SoftwareSerial rngSerial(10, 11);
 #define DUAL 2
 
 /***  Configure the RNG **************/
-int rng_mode = INTERNAL_ONLY;
-int rng_internal = true;
-int bias_removal = NO_BIAS_REMOVAL;
+int rng_mode = DUAL;
+int rng_internal = false;
+int bias_removal = EXCLUSIVE_OR;
 int output_format = BYTE;
 int baud_rate = 19200;
 /*************************************/
